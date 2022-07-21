@@ -1,0 +1,45 @@
+﻿@inject NavigationManager NavManager
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+
+<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <p class="navbar-brand" href="">All Art</p>
+        <button title="Navigation menu" class="navbar-toggler" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<div>
+    <nav class="flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="home">
+                <span class="oi oi-layers" aria-hidden="true"></span> Home
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="products">
+                <span class="oi oi-box" aria-hidden="true"></span> Products
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="about">
+                <span class="oi oi-share" aria-hidden="true"></span> About me
+            </NavLink>
+        </div>
+        <div id="log-out-btn" class="nav-item"> 
+                <p>@username
+                    <button><span class="oi oi-share" aria-hidden="true"></span></button>
+                </p>
+        </div>
+    </nav>
+</div>
+
+@code {
+    private string username = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        username = await localStorage.GetItemAsync<string>("username");
+    }
+}

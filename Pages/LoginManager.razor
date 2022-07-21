@@ -1,0 +1,55 @@
+﻿@page "/login"
+@using System;
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+@inject NavigationManager NavManager
+
+<PageTitle>LoginManager</PageTitle>
+
+<div>
+    <h1 id="Welcome">@SiteTitle</h1>
+
+    <form>
+        <label>Username</label>
+    <input type="text" @bind="Username"/>
+    <label>Password</label>
+    <input type="password" @bind="Password">
+    <button @onclick=TryLogin>Sign in</button>
+    </form>
+</div>
+
+
+<style>
+    .sidebar{
+        visibility:hidden;
+        max-width:0px;
+    }
+
+</style>
+
+@code {
+    [Parameter]
+    public string SiteTitle { get; set; } = "";
+    [Parameter]
+    public bool EnableLogin { get; set; } = false;
+
+    private string Username { get; set; } = "";
+    private string Password { get; set; } = "";
+
+    private const string rightUsername = "tisho02";
+    private const string rightPassword = "123";
+
+    protected override async Task OnInitializedAsync()
+    {
+        await localStorage.RemoveItemAsync("username");
+        if(!EnableLogin) NavManager.NavigateTo("home",true);
+    }
+
+    private async void TryLogin()
+    {
+        if (Username == rightUsername && Password == rightPassword) 
+        {
+            await localStorage.SetItemAsync("username",Username);
+            NavManager.NavigateTo("home",true);
+        }         
+    } 
+}

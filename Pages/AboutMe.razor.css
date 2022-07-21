@@ -1,0 +1,25 @@
+﻿a {
+    font-size: larger;
+    text-decoration: none;
+}
+
+#logo {
+    height:10vh;
+    width:auto;
+}
+
+p {
+    font-size: x-large;
+}
+
+center {
+    background: rgb(0,168,255);
+    background: linear-gradient(90deg, rgba(0,168,255,1) 0%, rgba(0,255,171,1) 100%);
+    border-radius: 15% 15%;
+    border-color: whitesmoke;
+    border-style: groove;
+}
+
+div { 
+    text-align: center;
+}

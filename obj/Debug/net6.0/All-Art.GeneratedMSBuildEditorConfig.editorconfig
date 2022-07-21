@@ -1,0 +1,64 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = All_Art
+build_property.RootNamespace = All_Art
+build_property.ProjectDir = D:\Projects\VisualStudio\All-Art\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Projects\VisualStudio\All-Art
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Projects/VisualStudio/All-Art/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/VisualStudio/All-Art/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/VisualStudio/All-Art/Pages/Products.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/VisualStudio/All-Art/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/VisualStudio/All-Art/Pages/AboutMe.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXRNZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-zils42s6wv
+
+[D:/Projects/VisualStudio/All-Art/Pages/Homepage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZXBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-oa2msp5bam
+
+[D:/Projects/VisualStudio/All-Art/Pages/LoginManager.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5NYW5hZ2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-pmvve5ngnc
+
+[D:/Projects/VisualStudio/All-Art/Pages/Product.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-1zctryh1v8
+
+[D:/Projects/VisualStudio/All-Art/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-hqm5y9d3j3
+
+[D:/Projects/VisualStudio/All-Art/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-m61w8zvf3o
+
+[D:/Projects/VisualStudio/All-Art/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/VisualStudio/All-Art/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,76 @@
+﻿@inherits LayoutComponentBase
+
+<PageTitle>All-Art</PageTitle>
+
+<div class="page">
+
+    @if(@visible)
+    {
+        <div class="sidebar">
+            <NavMenu />
+        </div>
+        <button id="sidebar-toggle" @onclick=ToggleSideBar><span class="oi oi-fullscreen-enter"></span></button>
+        
+        <style>
+            .oi {    
+            color: white;
+            }
+
+            #sidebar-toggle{
+                position:absolute;
+                left:10%;
+                height:5%;
+                top:1.4%;
+                background-color:transparent;
+                border:hidden;
+            }
+        </style>
+     }
+    else
+    {
+        <button id="sidebar-toggle" @onclick=ToggleSideBar><span class="oi oi-fullscreen-enter"></span></button>
+        <style>
+
+            #sidebar-toggle{
+                position:fixed;
+                top:1%;
+                left:1%;
+                height:5%;
+                border-radius:10%;
+                background: rgb(0,168,255);
+                background: linear-gradient(90deg, rgba(0,168,255,1) 0%, rgba(0,255,171,1) 100%);
+            }
+
+        </style>
+    }
+
+    <main>
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+
+    <style>
+            body
+            {
+                background-color:white;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            }
+    
+            h1 {
+                text-align: center;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+            }
+    </style>
+</div>
+
+
+
+@code{
+    private bool visible = true;
+
+    private void ToggleSideBar()
+    {
+        visible = !visible;   
+    }
+}

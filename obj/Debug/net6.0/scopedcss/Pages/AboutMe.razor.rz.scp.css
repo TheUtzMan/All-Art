@@ -1,0 +1,25 @@
+a[b-zils42s6wv] {
+    font-size: larger;
+    text-decoration: none;
+}
+
+#logo[b-zils42s6wv] {
+    height:10vh;
+    width:auto;
+}
+
+p[b-zils42s6wv] {
+    font-size: x-large;
+}
+
+center[b-zils42s6wv] {
+    background: rgb(0,168,255);
+    background: linear-gradient(90deg, rgba(0,168,255,1) 0%, rgba(0,255,171,1) 100%);
+    border-radius: 15% 15%;
+    border-color: whitesmoke;
+    border-style: groove;
+}
+
+div[b-zils42s6wv] { 
+    text-align: center;
+}

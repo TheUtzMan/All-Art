@@ -1,0 +1,22 @@
+﻿#div {
+    background: #CEBDA1;
+    background: linear-gradient(90deg, #1C0F13 0%, #1E555C 100%);
+    border-radius: 15% 15%;
+    border-color: whitesmoke;
+    border-style: groove;
+    display: grid;
+}
+
+img {
+    width: 25vw;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+}
+
+p {
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 3%;
+}
