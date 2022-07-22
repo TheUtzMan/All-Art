@@ -2,13 +2,38 @@
 @inject NavigationManager NavManager
 
 <PageTitle>Homepage</PageTitle>
-<h1>Homepage</h1>
+<div id="img"></div>
+<p>
+        Welcome to the website<br>
+        of the All-Art shop<br>
+        <div>
+            <button @onclick=NavigateToProducts>Products</button>
+            <button @onclick=NavigateToAbout>About me</button>
+        </div>
 
-<center>
-    <p>
-        Welcome to the All Art website!<br>
-        Welcome to the All Art website!<br>
-        Welcome to the All Art website!<br>
-        Welcome to the All Art website!<br>
-    </p>
-</center>
+        <div id=right>
+            <a href="https://www.facebook.com/art.felt.fashion"><img src="img/fb.png"/></a>
+            <a href="https://www.instagram.com/art.felt.fashion"><img src="img/instagram.png"/></a>
+        </div>
+</p>
+
+<style>
+    body {
+        background-image: url("/img/image.png");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+@code {
+    private void NavigateToProducts()
+    {
+        NavManager.NavigateTo("products");
+    }
+
+    private void NavigateToAbout()
+    {
+        NavManager.NavigateTo("about");
+    }
+}

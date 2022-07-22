@@ -72,10 +72,7 @@ main[b-hqm5y9d3j3] {
     }
 }
 
-button:hover[b-hqm5y9d3j3] {
-    cursor: pointer;
-    background: rgb(0,168,255);
-    background: linear-gradient(90deg, rgba(0,168,255,1) 0%, rgba(0,255,171,1) 100%);
-    transition-delay: .1s;
-    transition-duration: .1s;
+h1[b-hqm5y9d3j3] {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

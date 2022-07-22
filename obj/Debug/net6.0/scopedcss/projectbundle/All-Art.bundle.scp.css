@@ -25,8 +25,50 @@ div[b-zils42s6wv] {
     text-align: center;
 }
 /* _content/All-Art/Pages/Homepage.razor.rz.scp.css */
-p[b-oa2msp5bam]{
-    font-family:'Lucida Sans Unicode';
+p[b-oa2msp5bam] {
+    font-family:'Segoe Print';
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 25vh;
+    font-size: xxx-large;
+}
+
+div[b-oa2msp5bam] {
+    display: block;
+}
+
+button[b-oa2msp5bam] {
+    border-radius:12%;
+    height: 5vh;
+    width: 15vw;
+    margin-right: 1vw;
+    font-size: small;
+    font-family: monospace;
+    font-size:large;
+}
+
+button:hover[b-oa2msp5bam] {
+    transition-delay: .05s;
+    transition-duration: .1s;
+    transition-timing-function: ease-in;
+    background-color: slategray;
+    cursor: pointer;
+}
+
+a[b-oa2msp5bam] {
+    border-radius: 100%;
+}
+
+img[b-oa2msp5bam] {
+    max-width: 5vw;
+    max-height: auto;
+}
+
+#right[b-oa2msp5bam] {
+    position: absolute;
+    top: 35vh;
+    right: 5vw;
+    display: grid;
 }
 /* _content/All-Art/Pages/LoginManager.razor.rz.scp.css */
 div[b-pmvve5ngnc]{
@@ -65,17 +107,18 @@ input[b-pmvve5ngnc] {
 }
 /* _content/All-Art/Pages/Product.razor.rz.scp.css */
 #div[b-1zctryh1v8] {
-    background: #CEBDA1;
-    background: linear-gradient(90deg, #1C0F13 0%, #1E555C 100%);
+    background-color: black;
     border-radius: 15% 15%;
     border-color: whitesmoke;
     border-style: groove;
     display: grid;
+    max-width: 70vw;
+    max-height: 60vh;
 }
 
 img[b-1zctryh1v8] {
-    width: 25vw;
-    height: auto;
+    max-width: auto;
+    max-height: 40vh;
     margin-left: 5%;
     margin-right: 2%;
     margin-bottom: 1%;
@@ -85,6 +128,7 @@ p[b-1zctryh1v8] {
     text-align: left;
     margin-top: 5%;
     margin-left: 3%;
+    color: white;
 }
 /* _content/All-Art/Shared/MainLayout.razor.rz.scp.css */
 .page[b-hqm5y9d3j3] {
@@ -161,12 +205,9 @@ main[b-hqm5y9d3j3] {
     }
 }
 
-button:hover[b-hqm5y9d3j3] {
-    cursor: pointer;
-    background: rgb(0,168,255);
-    background: linear-gradient(90deg, rgba(0,168,255,1) 0%, rgba(0,255,171,1) 100%);
-    transition-delay: .1s;
-    transition-duration: .1s;
+h1[b-hqm5y9d3j3] {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /* _content/All-Art/Shared/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-m61w8zvf3o] {

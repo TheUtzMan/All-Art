@@ -1,3 +1,45 @@
-p[b-oa2msp5bam]{
-    font-family:'Lucida Sans Unicode';
+p[b-oa2msp5bam] {
+    font-family:'Segoe Print';
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 25vh;
+    font-size: xxx-large;
+}
+
+div[b-oa2msp5bam] {
+    display: block;
+}
+
+button[b-oa2msp5bam] {
+    border-radius:12%;
+    height: 5vh;
+    width: 15vw;
+    margin-right: 1vw;
+    font-size: small;
+    font-family: monospace;
+    font-size:large;
+}
+
+button:hover[b-oa2msp5bam] {
+    transition-delay: .05s;
+    transition-duration: .1s;
+    transition-timing-function: ease-in;
+    background-color: slategray;
+    cursor: pointer;
+}
+
+a[b-oa2msp5bam] {
+    border-radius: 100%;
+}
+
+img[b-oa2msp5bam] {
+    max-width: 5vw;
+    max-height: auto;
+}
+
+#right[b-oa2msp5bam] {
+    position: absolute;
+    top: 35vh;
+    right: 5vw;
+    display: grid;
 }

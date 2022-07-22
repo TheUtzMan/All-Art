@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "H8pjtNXuwbyIEcfj/xFysrP/VEQIheiOrnBuSFSG1ck=",
+  "Hash": "zkiXsiy5RLWcIW7y+i4ZqFDpi6RgiW9cEfPbtF0aa8Y=",
   "Source": "All-Art",
   "BasePath": "_content/All-Art",
   "Mode": "Default",
@@ -304,6 +304,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\flower.png"
+    },
+    {
+      "Identity": "D:\\Projects\\VisualStudio\\All-Art\\wwwroot\\img\\image.png",
+      "SourceId": "All-Art",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\VisualStudio\\All-Art\\wwwroot\\",
+      "BasePath": "_content/All-Art",
+      "RelativePath": "img/image.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\image.png"
     },
     {
       "Identity": "D:\\Projects\\VisualStudio\\All-Art\\wwwroot\\img\\instagram.png",
