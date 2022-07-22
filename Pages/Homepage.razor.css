@@ -49,3 +49,7 @@ img {
     right: 1vw;
     display: grid;
 }
+
+#right button {
+    transition: 0s 0s;
+}

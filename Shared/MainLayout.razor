@@ -1,4 +1,5 @@
 ﻿@inherits LayoutComponentBase
+@inject NavigationManager navManager
 
 <PageTitle>All-Art</PageTitle>
 
@@ -6,9 +7,15 @@
 
     <main>
         <article class="content px-4">
-            <button class="nav-link" href="home">
-                <span class="oi oi-arrow-left" aria-hidden="true"></span>
-            </button>
+            @if(navManager.Uri.Remove(0, navManager.Uri.LastIndexOf('/')+1)!="home")
+            {
+                <button id="nav">
+                    <NavLink class="nav-link" href="home">
+                        <span class="oi oi-arrow-left" aria-hidden="true"></span>
+                    </NavLink>
+                </button>                
+                    
+            }
             @Body
         </article>
     </main>
@@ -20,6 +27,28 @@
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    #nav {
+        border-radius: 10%;
+        padding: 0%;
+        width: 3vw;
+        height: 2vw;
+        background-color: transparent;
+    }
+
+    #nav span {
+        color: black;
+    }
+
+    #nav .nav-link {
+        padding:0%;
+    }
+
+    #nav:hover {
+        cursor:pointer;
+        transition-duration: .1s;
+        background-color: Highlight;
     }
 </style>
 

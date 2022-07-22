@@ -79,6 +79,10 @@ img[b-oa2msp5bam] {
     right: 1vw;
     display: grid;
 }
+
+#right button[b-oa2msp5bam] {
+    transition: 0s 0s;
+}
 /* _content/All-Art/Pages/LoginManager.razor.rz.scp.css */
 div[b-pmvve5ngnc]{
     margin-top:10%;

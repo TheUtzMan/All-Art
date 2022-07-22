@@ -49,3 +49,7 @@ img[b-oa2msp5bam] {
     right: 1vw;
     display: grid;
 }
+
+#right button[b-oa2msp5bam] {
+    transition: 0s 0s;
+}
