@@ -23,6 +23,9 @@ center[b-zils42s6wv] {
 
 div[b-zils42s6wv] { 
     text-align: center;
+    position: fixed;
+    bottom: 0%;
+    left: 40vw;
 }
 /* _content/All-Art/Pages/Homepage.razor.rz.scp.css */
 p[b-oa2msp5bam] {
@@ -31,6 +34,7 @@ p[b-oa2msp5bam] {
     margin-right: 10vw;
     margin-top: 25vh;
     font-size: xxx-large;
+    font-weight: 800;
 }
 
 div[b-oa2msp5bam] {
@@ -45,6 +49,7 @@ button[b-oa2msp5bam] {
     font-size: small;
     font-family: monospace;
     font-size:large;
+    background-color:transparent;
 }
 
 button:hover[b-oa2msp5bam] {
@@ -55,19 +60,23 @@ button:hover[b-oa2msp5bam] {
     cursor: pointer;
 }
 
-a[b-oa2msp5bam] {
-    border-radius: 100%;
+a:hover[b-oa2msp5bam] {
+    background-color: Highlight;
+    border-radius: 10%;
+    padding-bottom: 10%;
+    transition-duration: .1s;
+    transition-timing-function: step-end;
 }
 
 img[b-oa2msp5bam] {
-    max-width: 5vw;
+    max-width: 6vw;
     max-height: auto;
 }
 
 #right[b-oa2msp5bam] {
     position: absolute;
     top: 35vh;
-    right: 5vw;
+    right: 1vw;
     display: grid;
 }
 /* _content/All-Art/Pages/LoginManager.razor.rz.scp.css */

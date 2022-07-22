@@ -22,4 +22,7 @@ center[b-zils42s6wv] {
 
 div[b-zils42s6wv] { 
     text-align: center;
+    position: fixed;
+    bottom: 0%;
+    left: 40vw;
 }

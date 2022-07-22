@@ -6,12 +6,22 @@
 
     <main>
         <article class="content px-4">
+            <button class="nav-link" href="home">
+                <span class="oi oi-arrow-left" aria-hidden="true"></span>
+            </button>
             @Body
         </article>
     </main>
 </div>
 
-
+<style>
+    body {
+        background-image: url("/img/image.png");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
 
 @code{
     private bool visible = true;
