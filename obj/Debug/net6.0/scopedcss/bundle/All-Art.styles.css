@@ -14,10 +14,9 @@ p[b-zils42s6wv] {
 }
 
 center[b-zils42s6wv] {
-    background: rgb(0,168,255);
-    background: linear-gradient(90deg, rgba(0,168,255,1) 0%, rgba(0,255,171,1) 100%);
+    background: whitesmoke;
     border-radius: 15% 15%;
-    border-color: whitesmoke;
+    border-color: black;
     border-style: groove;
 }
 
@@ -143,6 +142,26 @@ p[b-1zctryh1v8] {
     margin-left: 3%;
     color: white;
 }
+
+#btn[b-1zctryh1v8] {
+    color: black;
+    margin-top: 2%;
+    background-color: whitesmoke;
+    border-radius: 0% 0% 70% 70%;
+    margin-bottom: 1%;
+    max-width: 90%;
+    margin-left: 5%;
+}
+
+#btn:hover[b-1zctryh1v8] {
+        background-color: Highlight;
+        border-radius: 0% 0% 30% 30%;
+        transition-delay: .1s;
+        transition-duration: .1s;
+        transition-timing-function: ease-in;
+        border-color: black;
+        border: groove;
+}    
 /* _content/All-Art/Shared/MainLayout.razor.rz.scp.css */
 .page[b-hqm5y9d3j3] {
     position: relative;

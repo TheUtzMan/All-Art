@@ -1,8 +1,10 @@
-﻿@if(Right)
+﻿@inject NavigationManager navManager
+
+@if(Right)
 {
     <div id="div">
         <p>@Desc <img id="image" crossorigin="anonymous" src=@imageSource style="float:right;margin:0%"/></p>       
-        <button id="btn">Order</button> 
+        <button id="btn" @onclick=@(() => navManager.NavigateTo($"/order/1"))>Order</button> 
     </div>
 
     <style>
@@ -12,69 +14,30 @@
             margin:0%;
             margin-right: 2%;
         }
-
-        #btn {
-            color: black;
-            margin-top: 2%;
-            background: #CEBDA1;
-            background: linear-gradient(90deg, #1E555C 0%, #F15152 100%);
-            border-radius: 0% 0% 30% 30%;
-            max-width:20%;
-            margin-left:40%;
-            margin-bottom: 1%;
-        }
-
-        #btn:hover {
-            background-color: #F15152;
-            border-radius: 0% 0% 30% 30%;
-            transition-delay:.1s;
-            transition-duration: .1s;
-            transition-timing-function:ease-in;
-            border-color:black;
-            border:groove;
-        }
     </style>
 }
 else {
     <div id="div">
         <p id="p"><img id="image" crossorigin="anonymous" src=@imageSource/> @Desc</p>
-        <button id="btn">Order</button>  
+        <button id="btn" @onclick=@(() => navManager.NavigateTo($"/order/1"))>Order</button> 
     </div>
     
     <style>
         #p {text-align:right; margin-right:2%;}
         img{float:left; margin:0%;}
-        #btn {
-            color: black;
-            margin-top: 2%;
-            background: #CEBDA1;
-            background: linear-gradient(90deg, #1E555C 0%, #F15152 100%);
-            border-radius: 0% 0% 30% 30%;
-            max-width:20%;
-            margin-left:40%;
-            margin-bottom: 1%;
-        }
-
-        #btn:hover {
-            background-color: #F15152;
-            border-radius: 0% 0% 30% 30%;
-            transition-delay:.1s;
-            transition-duration: .1s;
-            transition-timing-function:ease-in;
-            border-color:black;
-            border:groove;
-        }
     </style>
 }
 
 @code {
     private string imageSource =  "";
     private const string proxy = "https://api.codetabs.com/v1/proxy/?quest=";
-    
+
     [Parameter]
     public string ImageSource { get => imageSource; set => imageSource = value.Insert(0, proxy); }
     [Parameter]
     public string Desc { get; set; } = "";
     [Parameter]
     public bool Right { get; set; } = (new System.Random().Next(0, 2)==1?true:false);
+    [Parameter]
+    public int ID { get; set; } = -1;
 }

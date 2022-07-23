@@ -13,10 +13,9 @@ p[b-zils42s6wv] {
 }
 
 center[b-zils42s6wv] {
-    background: rgb(0,168,255);
-    background: linear-gradient(90deg, rgba(0,168,255,1) 0%, rgba(0,255,171,1) 100%);
+    background: whitesmoke;
     border-radius: 15% 15%;
-    border-color: whitesmoke;
+    border-color: black;
     border-style: groove;
 }
 
