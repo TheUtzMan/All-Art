@@ -26,6 +26,9 @@ div[b-zils42s6wv] {
     bottom: 0%;
     left: 40vw;
 }
+h1[b-zils42s6wv], h2[b-zils42s6wv] {
+    font-family: 'Segoe Print';
+}
 /* _content/All-Art/Pages/Homepage.razor.rz.scp.css */
 p[b-oa2msp5bam] {
     font-family:'Segoe Print';
@@ -117,6 +120,21 @@ button:hover[b-pmvve5ngnc] {
 input[b-pmvve5ngnc] {
     border-radius: 10%;
 }
+/* _content/All-Art/Pages/Order.razor.rz.scp.css */
+a[b-ig3qn3j7yw] {
+    text-decoration: none;
+    color: black;
+}
+
+form[b-ig3qn3j7yw] {
+    display: grid;
+    max-width: 50vw;
+    gap: 2vh;
+}
+
+h1[b-ig3qn3j7yw], h2[b-ig3qn3j7yw] {
+    font-family: 'Segoe Print';
+}
 /* _content/All-Art/Pages/Product.razor.rz.scp.css */
 #div[b-1zctryh1v8] {
     background-color: black;
@@ -172,7 +190,6 @@ p[b-1zctryh1v8] {
 main[b-hqm5y9d3j3] {
     flex: 1;
 }
-
 
 .sidebar[b-hqm5y9d3j3] {
     background-image: url("/img/panel.png");

@@ -1,0 +1,14 @@
+﻿a {
+    text-decoration: none;
+    color: black;
+}
+
+form {
+    display: grid;
+    max-width: 50vw;
+    gap: 2vh;
+}
+
+h1, h2 {
+    font-family: 'Segoe Print';
+}

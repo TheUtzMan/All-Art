@@ -1,9 +1,26 @@
 ﻿@page "/order/{id}"
 @inject NavigationManager navManager
 
-<h3>Order</h3>
+<center>
+    <h1>Order</h1>
+    <br>
+    <form method="post">
+        <label>E-mail</label>
+        <input type="email" @bind=@email/>
+        @if(email.Contains('@') && email.Contains('.') && email.Length>=5)
+        {
+           <button><NavLink href=@System.Web.HttpUtility.UrlEncodeUnicode($"mailto:{email}?subject=Your%20All-Art%20Order&body=Your%20All-Art%20order%20was%20successful!%0D%0AHere%20is%20your%20confirmation%20code%3A%20")>Confirm</NavLink></button>
+        }
+    </form>
+</center>
 
 @code {
     [Parameter]
     public string ID { get; set; } = string.Empty;
+
+    private string email = string.Empty;
+
+    private void ConfirmOrder()
+    {
+    }
 }

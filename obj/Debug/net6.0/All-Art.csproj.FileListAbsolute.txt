@@ -31,3 +31,4 @@ D:\Projects\VisualStudio\All-Art\obj\Debug\net6.0\scopedcss\Pages\Product.razor.
 D:\Projects\VisualStudio\All-Art\obj\Debug\net6.0\scopedcss\Pages\AboutMe.razor.rz.scp.css
 D:\Projects\VisualStudio\All-Art\bin\Debug\net6.0\Blazored.LocalStorage.dll
 D:\Projects\VisualStudio\All-Art\obj\Debug\net6.0\All-Art.csproj.CopyComplete
+D:\Projects\VisualStudio\All-Art\obj\Debug\net6.0\scopedcss\Pages\Order.razor.rz.scp.css
