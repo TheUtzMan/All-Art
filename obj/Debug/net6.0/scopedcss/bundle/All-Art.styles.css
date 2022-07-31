@@ -44,20 +44,20 @@ div[b-oa2msp5bam] {
 }
 
 button[b-oa2msp5bam] {
-    border-radius:12%;
+    border-radius: 12%;
     height: 5vh;
     width: 15vw;
     margin-right: 1vw;
     font-size: small;
     font-family: monospace;
-    font-size:large;
-    background-color:transparent;
+    font-size: large;
+    background-color: transparent;
 }
 
 button:hover[b-oa2msp5bam] {
     transition-delay: .05s;
     transition-duration: .1s;
-    transition-timing-function: ease-in;
+    transition-timing-function: ease-out;
     background-color: slategray;
     cursor: pointer;
 }
@@ -121,12 +121,7 @@ input[b-pmvve5ngnc] {
     border-radius: 10%;
 }
 /* _content/All-Art/Pages/Order.razor.rz.scp.css */
-a[b-ig3qn3j7yw] {
-    text-decoration: none;
-    color: black;
-}
-
-form[b-ig3qn3j7yw] {
+div[b-ig3qn3j7yw] {
     display: grid;
     max-width: 50vw;
     gap: 2vh;
@@ -135,6 +130,25 @@ form[b-ig3qn3j7yw] {
 h1[b-ig3qn3j7yw], h2[b-ig3qn3j7yw] {
     font-family: 'Segoe Print';
 }
+
+button[b-ig3qn3j7yw] {
+    color: black;
+    margin-top: 2%;
+    background-color: whitesmoke;
+    margin-bottom: 1%;
+    max-width: 90%;
+    margin-left: 5%;
+}
+
+    button:hover[b-ig3qn3j7yw] {
+        background-color: Highlight;
+        border-radius: 0% 0% 15% 15%;
+        transition-delay: .05s;
+        transition-duration: .1s;
+        transition-timing-function: ease-in;
+        border-color: black;
+        border: groove;
+    }    
 /* _content/All-Art/Pages/Product.razor.rz.scp.css */
 #div[b-1zctryh1v8] {
     background-color: black;

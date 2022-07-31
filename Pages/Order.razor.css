@@ -1,9 +1,4 @@
-﻿a {
-    text-decoration: none;
-    color: black;
-}
-
-form {
+﻿div {
     display: grid;
     max-width: 50vw;
     gap: 2vh;
@@ -12,3 +7,22 @@ form {
 h1, h2 {
     font-family: 'Segoe Print';
 }
+
+button {
+    color: black;
+    margin-top: 2%;
+    background-color: whitesmoke;
+    margin-bottom: 1%;
+    max-width: 90%;
+    margin-left: 5%;
+}
+
+    button:hover {
+        background-color: Highlight;
+        border-radius: 0% 0% 15% 15%;
+        transition-delay: .05s;
+        transition-duration: .1s;
+        transition-timing-function: ease-in;
+        border-color: black;
+        border: groove;
+    }    

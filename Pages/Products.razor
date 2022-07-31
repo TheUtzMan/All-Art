@@ -4,9 +4,10 @@
 
 <center>
     <h1>Products</h1>
-    <Product ID=0 Desc="This is the description of the shop item" ImageSource="https://scontent-sof1-1.cdninstagram.com/v/t51.2885-15/288652361_596106361728952_5144760220895157047_n.webp?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-sof1-1.cdninstagram.com&_nc_cat=104&_nc_ohc=DvNx0y4QBDYAX9j4S4o&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg2MjY1MzQxMzgxNzI0MTQzMQ%3D%3D.2-ccb7-5&oh=00_AT8UmY9t2g4pQr_0rzRs_X9trDYxbxVS9TgTDVnTR1Pl_w&oe=62E3667C&_nc_sid=30a2ef"/>
-    <Product ID=1 Desc="This is the description of the shop item" ImageSource="https://scontent-sof1-1.cdninstagram.com/v/t51.2885-15/289302014_1177154746434325_5530010086049384993_n.webp?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-sof1-1.cdninstagram.com&_nc_cat=101&_nc_ohc=PjmxjddoY0gAX_Xj3oz&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg2NDkzODQzNTM3MDY2MTY4Ng%3D%3D.2-ccb7-5&oh=00_AT8Dyiq_zc1A0M_FNrjhG5wu7q4sFZXPZyIfOvNmspF0sg&oe=62E3388C&_nc_sid=30a2ef"/>
-    <Product ID=2 Desc="This is the description of the shop item" ImageSource="https://scontent-sof1-1.cdninstagram.com/v/t51.2885-15/288865334_5157753061012642_8438198590450530752_n.webp?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-sof1-1.cdninstagram.com&_nc_cat=110&_nc_ohc=E0IKXLEq0QgAX_Knhvr&tn=2P54X_n45tWw65Bb&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg2MjQ1MTMyMTU3MTc2NzE1MA%3D%3D.2-ccb7-5&oh=00_AT8YqpLDA60VfGIHOzOjf3ONEmgfHlCscchwRlgivmmn6w&oe=62E258DE&_nc_sid=30a2ef"/>
+    @foreach(Product product in products)
+    {
+        <Product ID=product.ID Desc=@product.Desc ImageSource=@product.ImageSource/>
+    }
 </center>
 
 <style>
@@ -14,3 +15,42 @@
     font-family: 'Segoe Print';
 }
 </style>
+
+@code {
+    class Product
+    {
+        public string ImageSource { get; set; } = "";
+        public string Desc { get; set; } = "";
+        public int ID { get; set; }
+    }
+
+    List<Product> products = new();
+
+    protected override void OnInitialized()
+    {
+        LoadAllProducts();
+    }
+
+    private void LoadAllProducts()
+    {
+        //get each element from db
+
+        Product product = new();
+        product.ID = new System.Random().Next();
+        product.ImageSource = "https://scontent-sof1-1.cdninstagram.com/v/t51.2885-15/288652361_596106361728952_5144760220895157047_n.webp?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-sof1-1.cdninstagram.com&_nc_cat=104&_nc_ohc=DvNx0y4QBDYAX9j4S4o&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg2MjY1MzQxMzgxNzI0MTQzMQ%3D%3D.2-ccb7-5&oh=00_AT8UmY9t2g4pQr_0rzRs_X9trDYxbxVS9TgTDVnTR1Pl_w&oe=62E3667C&_nc_sid=30a2ef";
+        product.Desc = "This is the description of product " + product.ID;
+        products.Add(product);
+
+        product = new();
+        product.ID = new System.Random().Next();
+        product.ImageSource = "https://scontent-sof1-1.cdninstagram.com/v/t51.2885-15/289302014_1177154746434325_5530010086049384993_n.webp?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-sof1-1.cdninstagram.com&_nc_cat=101&_nc_ohc=PjmxjddoY0gAX_Xj3oz&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg2NDkzODQzNTM3MDY2MTY4Ng%3D%3D.2-ccb7-5&oh=00_AT8Dyiq_zc1A0M_FNrjhG5wu7q4sFZXPZyIfOvNmspF0sg&oe=62E3388C&_nc_sid=30a2ef";
+        product.Desc = "This is the description of product " + product.ID;
+        products.Add(product);
+
+        product = new();
+        product.ID = new System.Random().Next();
+        product.ImageSource = "https://scontent-sof1-1.cdninstagram.com/v/t51.2885-15/288865334_5157753061012642_8438198590450530752_n.webp?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent-sof1-1.cdninstagram.com&_nc_cat=110&_nc_ohc=E0IKXLEq0QgAX_Knhvr&tn=2P54X_n45tWw65Bb&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg2MjQ1MTMyMTU3MTc2NzE1MA%3D%3D.2-ccb7-5&oh=00_AT8YqpLDA60VfGIHOzOjf3ONEmgfHlCscchwRlgivmmn6w&oe=62E258DE&_nc_sid=30a2ef";
+        product.Desc = "This is the description of product " + product.ID;
+        products.Add(product);
+    }
+}
